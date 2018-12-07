@@ -73,8 +73,8 @@ public class AJEApp extends Application{
  
         trainButton.setOnAction(
             new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(final ActionEvent e) {
+                //@Override
+                public void handle(ActionEvent e) {
                 	
                     setExtDataFilters(fileChooser);
                     File selectedTrainingFile = fileChooser.showOpenDialog(primaryStage);
@@ -108,8 +108,8 @@ public class AJEApp extends Application{
         
         testAccuracyButton.setOnAction(
                 new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(final ActionEvent e) {
+                    //@Override
+                    public void handle(ActionEvent e) {
                     	
                         setExtDataFilters(fileChooser);
                         File selectedTestingFile = fileChooser.showOpenDialog(primaryStage);
